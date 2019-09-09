@@ -1,0 +1,52 @@
+{
+    "speakers": [
+        {
+            "name": "Rachel Green",
+            "suffix": "Ms.",
+            "age": 35,
+            "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed egestas egestas fringilla phasellus. Libero enim sed faucibus turpis in eu. Eu consequat ac felis donec et odio pellentesque. Tincidunt dui ut ornare lectus sit amet est placerat. Massa massa ultricies mi quis hendrerit dolor magna eget. Praesent semper feugiat nibh sed pulvinar proin. Ut ornare lectus sit amet. Eget sit amet tellus cras adipiscing enim eu. Non quam lacus suspendisse faucibus interdum posuere. Egestas sed sed risus pretium quam vulputate dignissim. Fermentum posuere urna nec tincidunt praesent semper. Quis enim lobortis scelerisque fermentum.",
+            "photo":"images/Rachel Green.jpg"
+
+        },
+        {
+            "name": "Joey Tribbiani",
+            "suffix": "Mr.",
+            "age": 36,
+            "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed egestas egestas fringilla phasellus. Libero enim sed faucibus turpis in eu. Eu consequat ac felis donec et odio pellentesque. Tincidunt dui ut ornare lectus sit amet est placerat. Massa massa ultricies mi quis hendrerit dolor magna eget. Praesent semper feugiat nibh sed pulvinar proin. Ut ornare lectus sit amet. Eget sit amet tellus cras adipiscing enim eu. Non quam lacus suspendisse faucibus interdum posuere. Egestas sed sed risus pretium quam vulputate dignissim. Fermentum posuere urna nec tincidunt praesent semper. Quis enim lobortis scelerisque fermentum.",
+            "photo":"images/Joey Tribbiani.jpg"
+
+        },
+        {
+            "name": "Phoebe Buffay",
+            "suffix": "Ms.",
+            "age": 34,
+            "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed egestas egestas fringilla phasellus. Libero enim sed faucibus turpis in eu. Eu consequat ac felis donec et odio pellentesque. Tincidunt dui ut ornare lectus sit amet est placerat. Massa massa ultricies mi quis hendrerit dolor magna eget. Praesent semper feugiat nibh sed pulvinar proin. Ut ornare lectus sit amet. Eget sit amet tellus cras adipiscing enim eu. Non quam lacus suspendisse faucibus interdum posuere. Egestas sed sed risus pretium quam vulputate dignissim. Fermentum posuere urna nec tincidunt praesent semper. Quis enim lobortis scelerisque fermentum.",
+            "photo":"images/Phoebe Buffay.jpg"
+
+        },
+        {
+            "name": "Chandler Bing",
+            "suffix": "Mr.",
+            "age": 36,
+            "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed egestas egestas fringilla phasellus. Libero enim sed faucibus turpis in eu. Eu consequat ac felis donec et odio pellentesque. Tincidunt dui ut ornare lectus sit amet est placerat. Massa massa ultricies mi quis hendrerit dolor magna eget. Praesent semper feugiat nibh sed pulvinar proin. Ut ornare lectus sit amet. Eget sit amet tellus cras adipiscing enim eu. Non quam lacus suspendisse faucibus interdum posuere. Egestas sed sed risus pretium quam vulputate dignissim. Fermentum posuere urna nec tincidunt praesent semper. Quis enim lobortis scelerisque fermentum.",
+            "photo":"images/Chandler Bing.jpg"
+
+        },
+        {
+            "name": "Monica Geller",
+            "suffix": "Ms.",
+            "age": 34,
+            "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed egestas egestas fringilla phasellus. Libero enim sed faucibus turpis in eu. Eu consequat ac felis donec et odio pellentesque. Tincidunt dui ut ornare lectus sit amet est placerat. Massa massa ultricies mi quis hendrerit dolor magna eget. Praesent semper feugiat nibh sed pulvinar proin. Ut ornare lectus sit amet. Eget sit amet tellus cras adipiscing enim eu. Non quam lacus suspendisse faucibus interdum posuere. Egestas sed sed risus pretium quam vulputate dignissim. Fermentum posuere urna nec tincidunt praesent semper. Quis enim lobortis scelerisque fermentum.",
+            "photo":"images/Monica Geller.jpg"
+
+        },
+        {
+            "name": "Ross Geller",
+            "suffix": "Mr.",
+            "age": 36,
+            "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed egestas egestas fringilla phasellus. Libero enim sed faucibus turpis in eu. Eu consequat ac felis donec et odio pellentesque. Tincidunt dui ut ornare lectus sit amet est placerat. Massa massa ultricies mi quis hendrerit dolor magna eget. Praesent semper feugiat nibh sed pulvinar proin. Ut ornare lectus sit amet. Eget sit amet tellus cras adipiscing enim eu. Non quam lacus suspendisse faucibus interdum posuere. Egestas sed sed risus pretium quam vulputate dignissim. Fermentum posuere urna nec tincidunt praesent semper. Quis enim lobortis scelerisque fermentum.",
+            "photo":"images/Ross Geller.jpg"
+
+        }
+    ]
+}

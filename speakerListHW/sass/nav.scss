@@ -1,0 +1,133 @@
+nav {
+    display: flex;
+    top: 0;
+    position: fixed;
+    height: 80px;
+    width: 100%;
+    // z-index: 99;
+    justify-content: space-between;
+    background-color: #00719077;
+  
+    .nav-footer {
+      display: flex;
+      top: 0;
+      //position: fixed;
+      height: 80px;
+      width: 100%;
+      z-index: 99;
+    }
+  
+    .flexWrapper{
+        display: flex;
+        // background-color: aliceblue;
+        width:40%;
+    .logo {
+      position: relative;
+      padding-top: 39px;
+      padding-left: 0px;
+      width: 18%;
+      display: flex;
+      justify-content: space-around;
+    //   background-color: red;
+  
+      img {
+  
+      }
+  
+      h3{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 60px;
+        letter-spacing: 2px;
+        font-weight: normal;
+        position: absolute;
+        top:0px;
+        color: white;
+        // background-color: red
+      }
+  
+    }
+
+    .title{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 28px;
+        letter-spacing: 2px;
+        font-weight: normal;
+        // background-color: #FFD972;
+        width: 80%;
+
+        h4{
+            position: absolute;
+            top: 21px;
+            color: white
+
+        }
+    }
+}
+  
+    .links {
+      width: 60%;
+      //background-color: green;
+      display: flex;
+      justify-content: space-around;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 20px;
+      text-decoration: none;
+      padding-right: 20px;
+      color: white;
+      letter-spacing: 2px;
+      
+  
+      a {
+        // padding-top: 0px;
+        color: white;;
+        text-decoration: none;
+        &:hover {
+          text-decoration: underline;
+          text-decoration-color: white;
+        }
+
+        .slash{
+            text-decoration: none;
+
+        }
+      }
+      .loginDiv {
+  
+      .loginBtn {
+        margin-top: 0px;
+        background-color: #F2BB05;
+        border: none;
+        width: 158px;
+        height: 52px;
+        border-radius: 20px;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 25px;
+        letter-spacing: 2px;
+        box-shadow: 0 8px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  
+  
+        &:hover {
+          background-color: rgba(67, 154, 134, 0.7);
+        }
+        button {
+          height: 52px;
+          background-color: rgba(0, 0, 0, 0);
+          border: none;
+          //font-family: Caveat, Regular;
+          font-size: 25px;
+          &:hover {
+            border-bottom: solid black 2px;
+          }
+  
+        }
+  
+      }
+    }
+    }
+  }
+  
+  //}
+  
+  nav a {
+    margin: auto;
+  }

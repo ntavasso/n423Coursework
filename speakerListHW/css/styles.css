@@ -1,0 +1,353 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html, body {
+  height: 100%;
+  width: 100%; }
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-bottom: 16px; }
+
+.wrapper {
+  min-height: 100vh; }
+
+.full {
+  /*position: absolute;*/
+  width: 100%;
+  /*z-index: 0;*/
+  display: none;
+  /*background-color: aquamarine;*/ }
+
+.about {
+  margin-top: 100px; }
+  .about h1 {
+    text-align: center;
+    font-size: 32px;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 2px; }
+  .about p {
+    text-align: center;
+    margin-left: 60px;
+    margin-right: 60px;
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 2px; }
+
+.contact .wrapper {
+  margin-top: 200px;
+  margin-left: 10%;
+  display: flex;
+  justify-content: space-between;
+  width: 80%; }
+  .contact .wrapper .text {
+    width: 60%;
+    text-align: center; }
+    .contact .wrapper .text h1 {
+      font-size: 36px;
+      font-family: "Montserrat", sans-serif;
+      letter-spacing: 2px; }
+    .contact .wrapper .text p {
+      font-size: 18px;
+      font-family: "Montserrat", sans-serif;
+      letter-spacing: 2px; }
+  .contact .wrapper .contactInfo {
+    width: 40%;
+    text-align: center; }
+    .contact .wrapper .contactInfo h1 {
+      font-size: 36px;
+      font-family: "Montserrat", sans-serif;
+      letter-spacing: 2px; }
+    .contact .wrapper .contactInfo ul {
+      margin-bottom: 100px; }
+      .contact .wrapper .contactInfo ul li {
+        list-style-type: none;
+        font-size: 18px;
+        font-family: "Montserrat", sans-serif;
+        letter-spacing: 2px; }
+
+.home .banner {
+  width: 100%; }
+  .home .banner img {
+    width: 100%;
+    height: 100%; }
+  .home .banner .title {
+    position: absolute;
+    top: 150px;
+    width: 55%;
+    height: 250px;
+    padding-left: 35px; }
+    .home .banner .title .quotes {
+      display: flex;
+      justify-content: space-between;
+      font-family: "Kaushan Script", cursive;
+      font-size: 25px;
+      color: white;
+      padding-top: 10px; }
+    .home .banner .title h1 {
+      position: relative;
+      padding-top: 60px;
+      font-family: "Montserrat", sans-serif;
+      font-size: 40px;
+      letter-spacing: 2px;
+      font-weight: normal;
+      color: white; }
+    .home .banner .title h2 {
+      color: white;
+      font-family: "Montserrat", sans-serif;
+      letter-spacing: 2px;
+      font-size: 20px; }
+
+.home .textWrapper {
+  padding-top: 40px;
+  display: flex;
+  justify-content: space-around;
+  text-align: center; }
+  .home .textWrapper .bodyText {
+    height: 300px;
+    width: 300px; }
+    .home .textWrapper .bodyText h1 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 20px;
+      letter-spacing: 2px;
+      font-weight: normal;
+      border-bottom: 2px solid black; }
+    .home .textWrapper .bodyText p {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 12px;
+      letter-spacing: 2px;
+      font-weight: normal; }
+
+footer {
+  position: relative;
+  max-height: 120px;
+  background-color: #439A86;
+  /*bottom: 0;*/
+  display: flex;
+  justify-content: space-around; }
+  footer .copyright {
+    padding-top: 25px;
+    font-size: 15px;
+    font-family: "Gill Sans MT";
+    font-style: italic; }
+  footer .footerText {
+    padding-top: 25px;
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+    font-family: "Gill Sans MT";
+    font-style: italic;
+    font-size: 15px;
+    height: 60px; }
+    footer .footerText a {
+      text-decoration: none;
+      color: black; }
+  footer .social {
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    width: 10%; }
+    footer .social i {
+      font-size: 40px; }
+
+.JSON .wrapper {
+  padding-top: 100px; }
+  .JSON .wrapper h1 {
+    padding-left: 100px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    letter-spacing: 2px; }
+  .JSON .wrapper .content .flexWrapper {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 40px; }
+    .JSON .wrapper .content .flexWrapper .image {
+      height: 200px;
+      width: 200px; }
+      .JSON .wrapper .content .flexWrapper .image img {
+        max-height: 100%;
+        min-height: 100%;
+        width: 100%;
+        overflow: hidden;
+        object-fit: cover; }
+    .JSON .wrapper .content .flexWrapper .bio {
+      height: 200px;
+      width: 60%;
+      font-family: "Montserrat", sans-serif;
+      font-size: 20px;
+      letter-spacing: 2px;
+      font-weight: normal; }
+      .JSON .wrapper .content .flexWrapper .bio .bioClass {
+        font-size: 14px; }
+
+.login .forms {
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  margin: auto; }
+  .login .forms .loginBlock {
+    margin-top: 205px;
+    width: 207px; }
+    .login .forms .loginBlock h1 {
+      font-size: 32px;
+      font-family: "Montserrat", sans-serif;
+      letter-spacing: 2px;
+      width: 230px; }
+    .login .forms .loginBlock input {
+      margin-top: 62px;
+      border: none;
+      border-bottom: 3px solid black;
+      width: 207px; }
+    .login .forms .loginBlock ::placeholder {
+      color: black;
+      font-size: 14px;
+      font-family: "Gill Sans MT";
+      letter-spacing: 1.5px; }
+    .login .forms .loginBlock .loginDiv .loginBtn {
+      margin-top: 56px;
+      background-color: #FFD972;
+      border: none;
+      width: 207px;
+      height: 52px;
+      border-radius: 20px;
+      font-family: "Montserrat", sans-serif;
+      font-size: 25px;
+      letter-spacing: 2px;
+      box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+      .login .forms .loginBlock .loginDiv .loginBtn:hover {
+        background-color: rgba(67, 154, 134, 0.7); }
+      .login .forms .loginBlock .loginDiv .loginBtn button {
+        height: 52px;
+        background-color: rgba(0, 0, 0, 0);
+        border: none;
+        font-size: 25px; }
+        .login .forms .loginBlock .loginDiv .loginBtn button:hover {
+          border-bottom: solid black 2px; }
+  .login .forms .signUpBlock {
+    margin-top: 170px;
+    width: 250px; }
+    .login .forms .signUpBlock p {
+      font-family: Gill Sans MT, Italics;
+      font-style: italic;
+      font-size: 12px;
+      letter-spacing: 1.5px; }
+    .login .forms .signUpBlock h1 {
+      font-size: 32px;
+      font-family: "Montserrat", sans-serif;
+      letter-spacing: 2px;
+      width: 207px; }
+    .login .forms .signUpBlock input {
+      margin-top: 62px;
+      border: none;
+      border-bottom: 3px solid black;
+      width: 250px; }
+    .login .forms .signUpBlock ::placeholder {
+      color: black;
+      font-size: 14px;
+      font-family: "Gill Sans MT";
+      letter-spacing: 1.5px; }
+    .login .forms .signUpBlock .loginDiv .loginBtn {
+      margin-top: 56px;
+      background-color: #FFD972;
+      border: none;
+      width: 250px;
+      height: 52px;
+      border-radius: 20px;
+      font-family: "Montserrat", sans-serif;
+      font-size: 25px;
+      letter-spacing: 2px;
+      box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+      .login .forms .signUpBlock .loginDiv .loginBtn:hover {
+        background-color: rgba(67, 154, 134, 0.7); }
+      .login .forms .signUpBlock .loginDiv .loginBtn button {
+        height: 52px;
+        background-color: rgba(0, 0, 0, 0);
+        border: none;
+        font-size: 25px; }
+        .login .forms .signUpBlock .loginDiv .loginBtn button:hover {
+          border-bottom: solid black 2px; }
+
+nav {
+  display: flex;
+  top: 0;
+  position: fixed;
+  height: 80px;
+  width: 100%;
+  justify-content: space-between;
+  background-color: #00719077; }
+  nav .nav-footer {
+    display: flex;
+    top: 0;
+    height: 80px;
+    width: 100%;
+    z-index: 99; }
+  nav .flexWrapper {
+    display: flex;
+    width: 40%; }
+    nav .flexWrapper .logo {
+      position: relative;
+      padding-top: 39px;
+      padding-left: 0px;
+      width: 18%;
+      display: flex;
+      justify-content: space-around; }
+      nav .flexWrapper .logo h3 {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 60px;
+        letter-spacing: 2px;
+        font-weight: normal;
+        position: absolute;
+        top: 0px;
+        color: white; }
+    nav .flexWrapper .title {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 28px;
+      letter-spacing: 2px;
+      font-weight: normal;
+      width: 80%; }
+      nav .flexWrapper .title h4 {
+        position: absolute;
+        top: 21px;
+        color: white; }
+  nav .links {
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+    padding-right: 20px;
+    color: white;
+    letter-spacing: 2px; }
+    nav .links a {
+      color: white;
+      text-decoration: none; }
+      nav .links a:hover {
+        text-decoration: underline;
+        text-decoration-color: white; }
+      nav .links a .slash {
+        text-decoration: none; }
+    nav .links .loginDiv .loginBtn {
+      margin-top: 0px;
+      background-color: #F2BB05;
+      border: none;
+      width: 158px;
+      height: 52px;
+      border-radius: 20px;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 25px;
+      letter-spacing: 2px;
+      box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+      nav .links .loginDiv .loginBtn:hover {
+        background-color: rgba(67, 154, 134, 0.7); }
+      nav .links .loginDiv .loginBtn button {
+        height: 52px;
+        background-color: rgba(0, 0, 0, 0);
+        border: none;
+        font-size: 25px; }
+        nav .links .loginDiv .loginBtn button:hover {
+          border-bottom: solid black 2px; }
+
+nav a {
+  margin: auto; }

@@ -1,0 +1,19 @@
+{
+  "name": "speakerlisthw",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "dependencies": {
+    "node-sass": "^4.12.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile:sass": "node-sass sass/styles.scss css/styles.css -w"
+  },
+  "author": "",
+  "license": "ISC"
+}

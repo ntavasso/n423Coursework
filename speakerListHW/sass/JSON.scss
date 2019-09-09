@@ -1,0 +1,46 @@
+.JSON {
+  .wrapper {
+    padding-top: 100px;
+
+    h1 {
+      padding-left: 100px;
+      font-family: "Montserrat", sans-serif;
+      font-size: 20px;
+      letter-spacing: 2px;
+    }
+    .content {
+      .flexWrapper {
+        display: flex;
+        justify-content: space-around;
+        padding-bottom: 40px;
+        .image {
+          height: 200px;
+          width: 200px;
+          // background-color: aqua;
+
+          img {
+            max-height: 100%;
+            min-height: 100%;
+            width: 100%;
+            overflow: hidden;
+            object-fit: cover;
+          }
+        }
+
+        .bio {
+          // background-color: red;
+          height: 200px;
+          width: 60%;
+          font-family: "Montserrat", sans-serif;
+          font-size: 20px;
+          letter-spacing: 2px;
+          font-weight: normal;
+
+          .bioClass {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}
