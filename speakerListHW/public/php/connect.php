@@ -27,10 +27,10 @@
 	$dbpwd  = 'root';
 	$dbname = 'ntavasso_db';
 	
-	$conn = new mysqli($dbhost, $dbuser, $dbpwd, $dbname);
+	$link = new mysqli($dbhost, $dbuser, $dbpwd, $dbname);
 
-	if ($conn->connect_error) {
-		die("Connection failed: " . $conn->connect_error);
+	if ($link->connect_error) {
+		die("Connection failed: " . $link->connect_error);
 
 	}
 
