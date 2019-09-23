@@ -47,7 +47,7 @@ while($row = mysqli_fetch_array($result, MYSQLI_BOTH)){
         <div class="links">
             <a id="home" href="index.html">Home <a class="slash">|</a></a>
             <a id="JSON" href="index.html">JSON Speakers <a class="slash">|</a></a>
-            <a id="MySQL" href="index.php">MySQL Speakers <a class="slash">|</a></a>
+            <a id="MySQL" href="speakers.php">MySQL Speakers <a class="slash">|</a></a>
             <a id="about" href="index.html">About <a class="slash">|</a></a>
             <a id="contactJSON" href="index.html">Contact JSON <a class="slash">|</a></a>
             <a id="contactMySQL" href="contact_json.php">Contact MySQL <a class="slash">|</a></a>
