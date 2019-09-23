@@ -65,7 +65,7 @@ while ($row = mysqli_fetch_array($result, MYSQLI_BOTH)){
         <div class="wrapper">
         <h1>Contacts</h1>
 				<?php
-				if(count($messages) < 1){ echo '<div class="message-notice"> There are no messages at this time.</div>'; }
+				// if(count($messages) < 1){ echo '<div class="message-notice"> There are no messages at this time.</div>'; }
 				
                 foreach ($messages as $message){
                     echo '	<div class="message">
