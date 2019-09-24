@@ -7,7 +7,7 @@ $result = mysqli_query($link, $query);
 
 $messages = Array();
 while ($row = mysqli_fetch_array($result, MYSQLI_BOTH)){
-	if($row["comment"] < ' '){$row["comment"] = "--No Message--";}
+	// if($row["comment"] < ' '){$row["comment"] = "--No Message--";}
 	
 	$messages[] = Array( 	"contactId" => $row["contactId"],
 							"fName" => $row["fName"],
