@@ -2,19 +2,19 @@ function initApp() {
   $("form").submit(function(e) {
 		   //prevent Default functionality
 			e.preventDefault();
-			$.post("php/login_json.php",
+			$.post("php/add_contact_json.php",
 				$("form").serialize(),
 				function(data){
-					$("#main_content").empty();
-					$("#main_content").append(`
+					// $("#main_content").empty();
+					$(".wrapper").append(`
 						<div id="message_body">
-							<p>${data.line1} ${data.line2}</p>
+							<p>${data.line1}</p>
+							<p>${data.line2}</p>
 						</div> <!-- /message body -->
 						<div id="return_link">
 							<a href="${data.url}">${data.link}</a> 
 						</div>  <!-- "return_link"--> 
 					`);//append
-					checkLogin();
 				}, //callback function
 				"json"
 			)

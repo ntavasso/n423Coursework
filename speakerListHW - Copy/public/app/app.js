@@ -102,7 +102,6 @@ function init() {
     $('#siSubmit').click(function(e) {
       e.preventDefault();
       $('nav #login').css('display', 'none');
-      $('nav #signout').css('display', 'block');
       $('.forms').css('display', 'none');
       $('.message_body').css('display', 'block'); 
       let email = $('#siEmail').val();
@@ -112,11 +111,10 @@ function init() {
     });
 
     $('#signout').click(function(e) {
-      window.location.reload()
-      // e.preventDefault();
-      // $('nav #login').css('display', 'block');
-      // $('.forms').css('display', 'flex');
-      // $('.message_body').css('display', 'none'); 
+      e.preventDefault();
+      $('nav #login').css('display', 'block');
+      $('.forms').css('display', 'flex');
+      $('.message_body').css('display', 'none'); 
 
               // console.log(pageName);
 

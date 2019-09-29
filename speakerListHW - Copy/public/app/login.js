@@ -8,7 +8,8 @@ function initApp() {
 					$("#main_content").empty();
 					$("#main_content").append(`
 						<div id="message_body">
-							<p>${data.line1} ${data.line2}</p>
+							<p>${data.line1}</p>
+							<p>${data.line2}</p>
 						</div> <!-- /message body -->
 						<div id="return_link">
 							<a href="${data.url}">${data.link}</a> 

@@ -426,14 +426,6 @@ footer {
       .login .forms .signUpBlock #suSubmit:hover {
         background-color: rgba(67, 154, 134, 0.7); }
 
-.login .message_body {
-  width: 100%;
-  margin-top: 150px; }
-  .login .message_body p {
-    font-size: 28px;
-    font-family: "Montserrat", sans-serif;
-    letter-spacing: 2px; }
-
 nav {
   display: flex;
   top: 0;
@@ -776,12 +768,3 @@ nav a {
       box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
       .wrapper #main_content form #siSubmitPHP:hover {
         background-color: rgba(67, 154, 134, 0.7); }
-  .wrapper #main_content #message_body {
-    width: 100%;
-    margin-top: 150px; }
-    .wrapper #main_content #message_body p {
-      font-size: 28px;
-      font-family: "Montserrat", sans-serif;
-      letter-spacing: 2px; }
-  .wrapper #main_content #return_link {
-    margin-top: 150px; }

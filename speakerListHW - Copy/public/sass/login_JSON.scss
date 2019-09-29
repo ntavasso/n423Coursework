@@ -1,0 +1,171 @@
+.wrapper {
+  
+    #main_content {
+      display: flex;
+      justify-content: space-around;
+      //background-color: red;
+      width: 80%;
+      margin: auto;
+  
+      .loginBlock {
+        //background-color: red;
+        margin-top: 150px;
+        width: 207px;
+  
+        h1 {
+          font-size: 32px;
+          font-family: "Montserrat", sans-serif;
+          letter-spacing: 2px;
+          //font-weight: bolder;
+          width: 230px;
+        }
+        form {
+  
+          p{
+            color: black;
+            font-size: 14px;
+            font-family: "Gill Sans MT";
+            letter-spacing: 1.5px;
+          }
+          input {
+            margin-top: 62px;
+            //   background-color: $loginBackgroundColor;
+            border: none;
+            border-bottom: 3px solid black;
+            width: 207px;
+          }
+          ::placeholder {
+            color: black;
+            font-size: 14px;
+            font-family: "Gill Sans MT";
+            letter-spacing: 1.5px;
+          }
+          
+  
+          #siSubmit{
+            margin-top: 56px;
+              background-color: #ffd972;
+              border: none;
+              width: 207px;
+              height: 52px;
+              border-radius: 20px;
+              font-family: "Montserrat", sans-serif;
+              font-size: 25px;
+              letter-spacing: 2px;
+              box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  
+              &:hover {
+                background-color: rgba(67, 154, 134, 0.7);
+              }
+          }
+          .loginDiv {
+            .loginBtn {
+              margin-top: 56px;
+              background-color: #ffd972;
+              border: none;
+              width: 207px;
+              height: 52px;
+              border-radius: 20px;
+              font-family: "Montserrat", sans-serif;
+              font-size: 25px;
+              letter-spacing: 2px;
+              box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  
+              &:hover {
+                background-color: rgba(67, 154, 134, 0.7);
+              }
+            }
+            .googleDiv {
+              text-align: center;
+              margin-top: 36px;
+              background-color: #ffd972;
+              border: none;
+              width: 207px;
+              height: 62px;
+              border-radius: 20px;
+              font-family: "Montserrat", sans-serif;
+              font-size: 25px;
+              letter-spacing: 2px;
+              box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+              &:hover {
+                background-color: rgba(67, 154, 134, 0.7);
+              }
+              a {
+                text-decoration: none;
+                font-family: "Montserrat", sans-serif;
+                font-size: 20px;
+                letter-spacing: 2px;
+                color: black;
+              }
+            }
+          }
+        }
+      }
+  
+      form {
+        //background-color: blue;
+        margin-top: 115px;
+        width: 250px;
+  
+        p {
+          font-family: Gill Sans MT, Italics;
+          font-style: italic;
+          font-size: 12px;
+          letter-spacing: 1.5px;
+        }
+  
+        h1 {
+          font-size: 32px;
+          font-family: "Montserrat", sans-serif;
+          letter-spacing: 2px;
+          width: 207px;
+        }
+
+        h3{
+            padding-top: 20px;
+            text-align: center;
+            font-size: 18px;
+          font-family: "Montserrat", sans-serif;
+          letter-spacing: 2px;
+        //   width: 207px;
+        }
+
+        .tinyText{
+         font-size: 20px;
+            margin-top: -23px;
+        }
+
+        
+  
+        input {
+          margin-top: 62px;
+          //   background-color: $loginBackgroundColor;
+          border: none;
+          border-bottom: 3px solid black;
+          width: 250px;
+        }
+        ::placeholder {
+          color: black;
+          font-size: 14px;
+          font-family: "Gill Sans MT";
+          letter-spacing: 1.5px;
+        }
+          #siSubmitPHP {
+            margin-top: 56px;
+            background-color: #ffd972;
+            border: none;
+            width: 250px;
+            height: 52px;
+            border-radius: 20px;
+            font-family: "Montserrat", sans-serif;
+            font-size: 25px;
+            letter-spacing: 2px;
+            box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  
+            &:hover {
+              background-color: rgba(67, 154, 134, 0.7);
+            }
+          }
+      }
+    }
+  }
