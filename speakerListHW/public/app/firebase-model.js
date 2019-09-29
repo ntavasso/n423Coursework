@@ -59,33 +59,35 @@ var FIREBASE_MODEL = (function () {
 
 }
 
-  // function authStateObserver(user) {
-  //   console.log(user);
-  //   if (user) {
-  //     // console.log("signed in " + user.displayName);
-  //     $('#signin-google').attr('hidden', true);
-  //     $('#signout-google').removeAttr('hidden');
-  //     $('.user.pic').removeAttr('hidden');
-  //     $('.user-name').removeAttr('hidden');
-  //     $('.user-name').text(user.displayName);
-  //     $('.user.pic').css('background-image', 'url(' + user.photoURL + ')');
+  function authStateObserver(user) {
+    console.log(user);
+    if (user) {
+      // console.log("signed in " + user.displayName);
+      $('#signin-google').attr('hidden', true);
+      $('#signout-google').removeAttr('hidden');
+      $('#signout').removeAttr('hidden');
+      $('.user.pic').removeAttr('hidden');
+      $('.user-name').removeAttr('hidden');
+      $('.user-name').text(user.displayName);
+      $('.user.pic').css('background-image', 'url(' + user.photoURL + ')');
 
-  //   } else {
-  //     // console.log("No User");
-  //     $('#signin-google').removeAttr('hidden');
-  //     $('#signout-google').attr('hidden', true);
-  //     $('.user.pic').attr('hidden', true);
-  //     $('.user-name').attr('hidden', true);
-  //     $('.user-name').text('');
+    } else {
+      // console.log("No User");
+      $('#signin-google').removeAttr('hidden');
+      $('#signout-google').attr('hidden', true);
+      $('#signout').attr('hidden', true);
+      $('.user.pic').attr('hidden', true);
+      $('.user-name').attr('hidden', true);
+      $('.user-name').text('');
 
 
-  //   }
-  // }
+    }
+  }
 
-  // function initFirebaseAuth() {
+  function initFirebaseAuth() {
 
-  //   firebase.auth().onAuthStateChanged(authStateObserver);
-  // }
+    firebase.auth().onAuthStateChanged(authStateObserver);
+  }
 
   var _createContact = function(fName, lName, email, comment) {
     //  firebase
@@ -117,60 +119,60 @@ var FIREBASE_MODEL = (function () {
       // });
   };
 
-  // var _signinWithGoogle = function () {
-  //   var provider = new firebase.auth.GoogleAuthProvider();
-  //   firebase.auth().signInWithPopup(provider);
-  // };
+  var _signinWithGoogle = function () {
+    var provider = new firebase.auth.GoogleAuthProvider();
+    firebase.auth().signInWithPopup(provider);
+  };
 
-  // var _createAccount = function (email, pw, fName, lName) {
-  //   firebase
-  //     .auth()
-  //     .createUserWithEmailAndPassword(email, pw)
-  //     .catch(function (error) {
-  //       // Handle Errors here.
-  //       var errorCode = error.code;
-  //       var errorMessage = error.message;
-  //       console.log(errorCode + ' ' + errorMessage);
-  //     }).then(function (res) {
+  var _createAccount = function (email, pw, fName, lName) {
+    firebase
+      .auth()
+      .createUserWithEmailAndPassword(email, pw)
+      .catch(function (error) {
+        // Handle Errors here.
+        var errorCode = error.code;
+        var errorMessage = error.message;
+        console.log(errorCode + ' ' + errorMessage);
+      }).then(function (res) {
 
-  //       return firebase
-  //         .firestore()
-  //         .collection('users')
-  //         .add({
-  //           displayName: fName + ' ' + lName,
-  //           email: email,
-  //           Timestamp: firebase.firestore.FieldValue.serverTimestamp(),
-  //         })
-  //         .catch(function (error) {
-  //           console.error(
-  //             'Error writing new message to firestore database',
-  //             error
-  //           )
-  //         })
-  //     });
-  //   // console.log(email);
-  // }
+        return firebase
+          .firestore()
+          .collection('users')
+          .add({
+            displayName: fName + ' ' + lName,
+            email: email,
+            Timestamp: firebase.firestore.FieldValue.serverTimestamp(),
+          })
+          .catch(function (error) {
+            console.error(
+              'Error writing new message to firestore database',
+              error
+            )
+          })
+      });
+    // console.log(email);
+  }
 
-  // var _signInWithEP = function (email, pw) {
-  //   firebase
-  //     .auth()
-  //     .signInWithEmailAndPassword(email, pw)
-  //     .catch(function (error) {
-  //       // Handle Errors here.
-  //       var errorCode = error.code;
-  //       var errorMessage = error.message;
-  //       console.log(errorCode + ' ' + errorMessage);
-  //     }).then(function (res) {
-  //       console.log(res);
-  //     });
-  //   // console.log(email);
-  // }
+  var _signInWithEP = function (email, pw) {
+    firebase
+      .auth()
+      .signInWithEmailAndPassword(email, pw)
+      .catch(function (error) {
+        // Handle Errors here.
+        var errorCode = error.code;
+        var errorMessage = error.message;
+        console.log(errorCode + ' ' + errorMessage);
+      }).then(function (res) {
+        console.log(res);
+      });
+    // console.log(email);
+  }
 
-  // var _signOut = function () {
-  //   firebase.auth().signOut();
-  // };
+  var _signOut = function () {
+    firebase.auth().signOut();
+  };
 
-  // initFirebaseAuth();
+  initFirebaseAuth();
 
   return {
     //   return functions here
@@ -178,7 +180,10 @@ var FIREBASE_MODEL = (function () {
     getSpeakersArray: _getSpeakersArray,
     getContactsArray: _getContactsArray,
     setContact: _setContact,
-    createContact: _createContact
+    createContact: _createContact,signinWithGoogle: _signinWithGoogle,
+    signOut: _signOut,
+    createAccount: _createAccount,
+    signInWithEP: _signInWithEP
 
   };
 })();

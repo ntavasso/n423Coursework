@@ -56,10 +56,9 @@ function init() {
       }
 
 
-      if (pageName == "signin") {
-        // This is for when you sign in with email password
-        //   You would probably display the form here We are not doing anything with it now
-        console.log("email");
+      if (pageName == "login") {
+        $('.message_body').css('display', 'none');
+        console.log("hello");
       }
   
       if (pageName == "signin-google") {
@@ -68,10 +67,59 @@ function init() {
         FIREBASE_MODEL.signinWithGoogle();
       }
   
-      if (pageName == "signout-google") {
+      // if (pageName == "signout") {
+      //   //   this is for google signin
+      //   console.log("signout");
+      //   FIREBASE_MODEL.signOut();
+      // }
+    });
+
+    $(".googleDiv a").click(function (e) {
+      let googleBtnId = e.currentTarget.id;
+
+      if (googleBtnId == 'signin-google') {
+        //   this is for google signin
+        FIREBASE_MODEL.signinWithGoogle();
+      }
+
+      if (googleBtnId == 'signout-google') {
         //   this is for google signin
         FIREBASE_MODEL.signOut();
       }
+    });
+
+    $('#suSubmit').click(function(e) {
+      $('.forms').css('display', 'none');
+      $('.message_body').css('display', 'block');      e.preventDefault();
+      let fName = $('#sufName').val();
+      let lName = $('#sulName').val();
+      let email = $('#suEmail').val();
+      let pw = $('#suPassword').val();
+  
+      FIREBASE_MODEL.createAccount(email, pw, fName, lName);
+    });
+  
+    $('#siSubmit').click(function(e) {
+      e.preventDefault();
+      $('nav #login').css('display', 'none');
+      $('.forms').css('display', 'none');
+      $('.message_body').css('display', 'block'); 
+      let email = $('#siEmail').val();
+      let pw = $('#siPassword').val();
+  
+      FIREBASE_MODEL.signInWithEP(email, pw);
+    });
+
+    $('#signout').click(function(e) {
+      e.preventDefault();
+      $('nav #login').css('display', 'block');
+      $('.forms').css('display', 'flex');
+      $('.message_body').css('display', 'none'); 
+
+              // console.log(pageName);
+
+  
+      FIREBASE_MODEL.signOut();
     });
 
     $('form').submit(function(e) {

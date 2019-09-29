@@ -6,10 +6,10 @@
   "directories": {
     "lib": "lib"
   },
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
     "node-sass": "^4.12.0"
   },
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "compile:sass": "node-sass public/sass/styles.scss public/css/styles.css -w"

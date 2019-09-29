@@ -35,30 +35,7 @@ while ($row = mysqli_fetch_array($result, MYSQLI_BOTH)){
 
 </head>
   <body>
-  <nav class="nav-footer">
-        <div class="flexWrapper">
-            <div class="logo">
-                <h3><i class="fas fa-microphone-alt"></i></h3>
-            </div>
-            <div class="title">
-                <h4>A conference for...Friends</h4>
-            </div>
-        </div>
-        <div class="links">
-            <a id="home" href="index.html">Home <a class="slash">|</a></a>
-            <a id="JSON" href="index.html">JSON Speakers <a class="slash">|</a></a>
-            <a id="MySQL" href="speakers.php">MySQL Speakers <a class="slash">|</a></a>
-            <a id="about" href="index.html">About <a class="slash">|</a></a>
-            <a id="contactJSON" href="index.html">Contact JSON <a class="slash">|</a></a>
-            <a id="contactMySQL" href="index.html">Contact MySQL <a class="slash">|</a></a>
-            <a id="contactView" href="index.html">Contact View <a class="slash">|</a></a>
-            <a id="contactViewMySQL" href="messages.php">Contact View MySQL</a>
-            <a id="login" href="#">
-                <div class="loginDiv">
-                    <button class="loginBtn">Login</button>
-                </div>
-            </a>
-        </div>
+  <nav>
     </nav>  <!-- end nav-bar -->
 
     <section class="contactView">
@@ -135,6 +112,7 @@ while ($row = mysqli_fetch_array($result, MYSQLI_BOTH)){
     <script src="/__/firebase/init.js"></script> -->
     <script src="lib/jquery-3.4.1.min.js"></script>
     <script src="app/firebase-model.js"></script>
+    <script src="app/navbar.js"></script>
     <script src="app/app.js"></script>
 </body>
 

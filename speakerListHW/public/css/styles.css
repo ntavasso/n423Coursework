@@ -321,26 +321,31 @@ footer {
   width: 80%;
   margin: auto; }
   .login .forms .loginBlock {
-    margin-top: 205px;
+    margin-top: 150px;
     width: 207px; }
     .login .forms .loginBlock h1 {
       font-size: 32px;
       font-family: "Montserrat", sans-serif;
       letter-spacing: 2px;
       width: 230px; }
-    .login .forms .loginBlock input {
-      margin-top: 62px;
-      border: none;
-      border-bottom: 3px solid black;
-      width: 207px; }
-    .login .forms .loginBlock ::placeholder {
+    .login .forms .loginBlock form p {
       color: black;
       font-size: 14px;
       font-family: "Gill Sans MT";
       letter-spacing: 1.5px; }
-    .login .forms .loginBlock .loginDiv .loginBtn {
+    .login .forms .loginBlock form input {
+      margin-top: 62px;
+      border: none;
+      border-bottom: 3px solid black;
+      width: 207px; }
+    .login .forms .loginBlock form ::placeholder {
+      color: black;
+      font-size: 14px;
+      font-family: "Gill Sans MT";
+      letter-spacing: 1.5px; }
+    .login .forms .loginBlock form #siSubmit {
       margin-top: 56px;
-      background-color: #FFD972;
+      background-color: #ffd972;
       border: none;
       width: 207px;
       height: 52px;
@@ -349,17 +354,43 @@ footer {
       font-size: 25px;
       letter-spacing: 2px;
       box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
-      .login .forms .loginBlock .loginDiv .loginBtn:hover {
+      .login .forms .loginBlock form #siSubmit:hover {
         background-color: rgba(67, 154, 134, 0.7); }
-      .login .forms .loginBlock .loginDiv .loginBtn button {
-        height: 52px;
-        background-color: rgba(0, 0, 0, 0);
-        border: none;
-        font-size: 25px; }
-        .login .forms .loginBlock .loginDiv .loginBtn button:hover {
-          border-bottom: solid black 2px; }
+    .login .forms .loginBlock form .loginDiv .loginBtn {
+      margin-top: 56px;
+      background-color: #ffd972;
+      border: none;
+      width: 207px;
+      height: 52px;
+      border-radius: 20px;
+      font-family: "Montserrat", sans-serif;
+      font-size: 25px;
+      letter-spacing: 2px;
+      box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+      .login .forms .loginBlock form .loginDiv .loginBtn:hover {
+        background-color: rgba(67, 154, 134, 0.7); }
+    .login .forms .loginBlock form .loginDiv .googleDiv {
+      text-align: center;
+      margin-top: 36px;
+      background-color: #ffd972;
+      border: none;
+      width: 207px;
+      height: 62px;
+      border-radius: 20px;
+      font-family: "Montserrat", sans-serif;
+      font-size: 25px;
+      letter-spacing: 2px;
+      box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+      .login .forms .loginBlock form .loginDiv .googleDiv:hover {
+        background-color: rgba(67, 154, 134, 0.7); }
+      .login .forms .loginBlock form .loginDiv .googleDiv a {
+        text-decoration: none;
+        font-family: "Montserrat", sans-serif;
+        font-size: 20px;
+        letter-spacing: 2px;
+        color: black; }
   .login .forms .signUpBlock {
-    margin-top: 170px;
+    margin-top: 115px;
     width: 250px; }
     .login .forms .signUpBlock p {
       font-family: Gill Sans MT, Italics;
@@ -381,9 +412,9 @@ footer {
       font-size: 14px;
       font-family: "Gill Sans MT";
       letter-spacing: 1.5px; }
-    .login .forms .signUpBlock .loginDiv .loginBtn {
+    .login .forms .signUpBlock #suSubmit {
       margin-top: 56px;
-      background-color: #FFD972;
+      background-color: #ffd972;
       border: none;
       width: 250px;
       height: 52px;
@@ -392,15 +423,8 @@ footer {
       font-size: 25px;
       letter-spacing: 2px;
       box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
-      .login .forms .signUpBlock .loginDiv .loginBtn:hover {
+      .login .forms .signUpBlock #suSubmit:hover {
         background-color: rgba(67, 154, 134, 0.7); }
-      .login .forms .signUpBlock .loginDiv .loginBtn button {
-        height: 52px;
-        background-color: rgba(0, 0, 0, 0);
-        border: none;
-        font-size: 25px; }
-        .login .forms .signUpBlock .loginDiv .loginBtn button:hover {
-          border-bottom: solid black 2px; }
 
 nav {
   display: flex;
@@ -445,7 +469,7 @@ nav {
         top: 21px;
         color: white; }
   nav .links {
-    width: 65%;
+    width: 80%;
     display: flex;
     justify-content: space-around;
     font-family: 'Montserrat', sans-serif;
@@ -504,3 +528,243 @@ nav a {
     font-family: "Montserrat", sans-serif;
     font-size: 16px;
     letter-spacing: 2px; }
+
+.wrapper #main_content {
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  margin: auto; }
+  .wrapper #main_content .loginBlock {
+    margin-top: 150px;
+    width: 207px; }
+    .wrapper #main_content .loginBlock h1 {
+      font-size: 32px;
+      font-family: "Montserrat", sans-serif;
+      letter-spacing: 2px;
+      width: 230px; }
+    .wrapper #main_content .loginBlock form p {
+      color: black;
+      font-size: 14px;
+      font-family: "Gill Sans MT";
+      letter-spacing: 1.5px; }
+    .wrapper #main_content .loginBlock form input {
+      margin-top: 62px;
+      border: none;
+      border-bottom: 3px solid black;
+      width: 207px; }
+    .wrapper #main_content .loginBlock form ::placeholder {
+      color: black;
+      font-size: 14px;
+      font-family: "Gill Sans MT";
+      letter-spacing: 1.5px; }
+    .wrapper #main_content .loginBlock form #siSubmit {
+      margin-top: 56px;
+      background-color: #ffd972;
+      border: none;
+      width: 207px;
+      height: 52px;
+      border-radius: 20px;
+      font-family: "Montserrat", sans-serif;
+      font-size: 25px;
+      letter-spacing: 2px;
+      box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+      .wrapper #main_content .loginBlock form #siSubmit:hover {
+        background-color: rgba(67, 154, 134, 0.7); }
+    .wrapper #main_content .loginBlock form .loginDiv .loginBtn {
+      margin-top: 56px;
+      background-color: #ffd972;
+      border: none;
+      width: 207px;
+      height: 52px;
+      border-radius: 20px;
+      font-family: "Montserrat", sans-serif;
+      font-size: 25px;
+      letter-spacing: 2px;
+      box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+      .wrapper #main_content .loginBlock form .loginDiv .loginBtn:hover {
+        background-color: rgba(67, 154, 134, 0.7); }
+    .wrapper #main_content .loginBlock form .loginDiv .googleDiv {
+      text-align: center;
+      margin-top: 36px;
+      background-color: #ffd972;
+      border: none;
+      width: 207px;
+      height: 62px;
+      border-radius: 20px;
+      font-family: "Montserrat", sans-serif;
+      font-size: 25px;
+      letter-spacing: 2px;
+      box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+      .wrapper #main_content .loginBlock form .loginDiv .googleDiv:hover {
+        background-color: rgba(67, 154, 134, 0.7); }
+      .wrapper #main_content .loginBlock form .loginDiv .googleDiv a {
+        text-decoration: none;
+        font-family: "Montserrat", sans-serif;
+        font-size: 20px;
+        letter-spacing: 2px;
+        color: black; }
+  .wrapper #main_content form {
+    margin-top: 115px;
+    width: 250px; }
+    .wrapper #main_content form p {
+      font-family: Gill Sans MT, Italics;
+      font-style: italic;
+      font-size: 12px;
+      letter-spacing: 1.5px; }
+    .wrapper #main_content form h1 {
+      font-size: 32px;
+      font-family: "Montserrat", sans-serif;
+      letter-spacing: 2px;
+      width: 207px; }
+    .wrapper #main_content form h3 {
+      padding-top: 20px;
+      text-align: center;
+      font-size: 18px;
+      font-family: "Montserrat", sans-serif;
+      letter-spacing: 2px; }
+    .wrapper #main_content form .tinyText {
+      font-size: 20px;
+      margin-top: -23px; }
+    .wrapper #main_content form input {
+      margin-top: 62px;
+      border: none;
+      border-bottom: 3px solid black;
+      width: 250px; }
+    .wrapper #main_content form ::placeholder {
+      color: black;
+      font-size: 14px;
+      font-family: "Gill Sans MT";
+      letter-spacing: 1.5px; }
+    .wrapper #main_content form #suSubmitPHP {
+      margin-top: 56px;
+      background-color: #ffd972;
+      border: none;
+      width: 250px;
+      height: 52px;
+      border-radius: 20px;
+      font-family: "Montserrat", sans-serif;
+      font-size: 25px;
+      letter-spacing: 2px;
+      box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+      .wrapper #main_content form #suSubmitPHP:hover {
+        background-color: rgba(67, 154, 134, 0.7); }
+
+.wrapper #main_content {
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  margin: auto; }
+  .wrapper #main_content .loginBlock {
+    margin-top: 150px;
+    width: 207px; }
+    .wrapper #main_content .loginBlock h1 {
+      font-size: 32px;
+      font-family: "Montserrat", sans-serif;
+      letter-spacing: 2px;
+      width: 230px; }
+    .wrapper #main_content .loginBlock form p {
+      color: black;
+      font-size: 14px;
+      font-family: "Gill Sans MT";
+      letter-spacing: 1.5px; }
+    .wrapper #main_content .loginBlock form input {
+      margin-top: 62px;
+      border: none;
+      border-bottom: 3px solid black;
+      width: 207px; }
+    .wrapper #main_content .loginBlock form ::placeholder {
+      color: black;
+      font-size: 14px;
+      font-family: "Gill Sans MT";
+      letter-spacing: 1.5px; }
+    .wrapper #main_content .loginBlock form #siSubmit {
+      margin-top: 56px;
+      background-color: #ffd972;
+      border: none;
+      width: 207px;
+      height: 52px;
+      border-radius: 20px;
+      font-family: "Montserrat", sans-serif;
+      font-size: 25px;
+      letter-spacing: 2px;
+      box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+      .wrapper #main_content .loginBlock form #siSubmit:hover {
+        background-color: rgba(67, 154, 134, 0.7); }
+    .wrapper #main_content .loginBlock form .loginDiv .loginBtn {
+      margin-top: 56px;
+      background-color: #ffd972;
+      border: none;
+      width: 207px;
+      height: 52px;
+      border-radius: 20px;
+      font-family: "Montserrat", sans-serif;
+      font-size: 25px;
+      letter-spacing: 2px;
+      box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+      .wrapper #main_content .loginBlock form .loginDiv .loginBtn:hover {
+        background-color: rgba(67, 154, 134, 0.7); }
+    .wrapper #main_content .loginBlock form .loginDiv .googleDiv {
+      text-align: center;
+      margin-top: 36px;
+      background-color: #ffd972;
+      border: none;
+      width: 207px;
+      height: 62px;
+      border-radius: 20px;
+      font-family: "Montserrat", sans-serif;
+      font-size: 25px;
+      letter-spacing: 2px;
+      box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+      .wrapper #main_content .loginBlock form .loginDiv .googleDiv:hover {
+        background-color: rgba(67, 154, 134, 0.7); }
+      .wrapper #main_content .loginBlock form .loginDiv .googleDiv a {
+        text-decoration: none;
+        font-family: "Montserrat", sans-serif;
+        font-size: 20px;
+        letter-spacing: 2px;
+        color: black; }
+  .wrapper #main_content form {
+    margin-top: 115px;
+    width: 250px; }
+    .wrapper #main_content form p {
+      font-family: Gill Sans MT, Italics;
+      font-style: italic;
+      font-size: 12px;
+      letter-spacing: 1.5px; }
+    .wrapper #main_content form h1 {
+      font-size: 32px;
+      font-family: "Montserrat", sans-serif;
+      letter-spacing: 2px;
+      width: 207px; }
+    .wrapper #main_content form h3 {
+      padding-top: 20px;
+      text-align: center;
+      font-size: 18px;
+      font-family: "Montserrat", sans-serif;
+      letter-spacing: 2px; }
+    .wrapper #main_content form .tinyText {
+      font-size: 20px;
+      margin-top: -23px; }
+    .wrapper #main_content form input {
+      margin-top: 62px;
+      border: none;
+      border-bottom: 3px solid black;
+      width: 250px; }
+    .wrapper #main_content form ::placeholder {
+      color: black;
+      font-size: 14px;
+      font-family: "Gill Sans MT";
+      letter-spacing: 1.5px; }
+    .wrapper #main_content form #siSubmitPHP {
+      margin-top: 56px;
+      background-color: #ffd972;
+      border: none;
+      width: 250px;
+      height: 52px;
+      border-radius: 20px;
+      font-family: "Montserrat", sans-serif;
+      font-size: 25px;
+      letter-spacing: 2px;
+      box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+      .wrapper #main_content form #siSubmitPHP:hover {
+        background-color: rgba(67, 154, 134, 0.7); }

@@ -1,5 +1,5 @@
 <?php
-include("php/connect.php");
+include("connect.php");
 
 $query = "SELECT id, firstName, lastName, suffix, age, description, photo from speakers";
 $result = mysqli_query($link, $query);
