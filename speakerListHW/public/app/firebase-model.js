@@ -172,6 +172,17 @@ var FIREBASE_MODEL = (function () {
     firebase.auth().signOut();
   };
 
+  var _sendResetPassword = function (emailAddress) {
+    let auth = firebase.auth();
+    auth.sendPasswordResetEmail(emailAddress)
+      .then(function () {
+        console.log('email sent');
+      })
+      .catch(function (error) {
+        console.log(error);
+      });
+  };
+
   initFirebaseAuth();
 
   return {
@@ -183,7 +194,8 @@ var FIREBASE_MODEL = (function () {
     createContact: _createContact,signinWithGoogle: _signinWithGoogle,
     signOut: _signOut,
     createAccount: _createAccount,
-    signInWithEP: _signInWithEP
+    signInWithEP: _signInWithEP,
+    sendResetPassword:_sendResetPassword 
 
   };
 })();

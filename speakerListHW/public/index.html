@@ -35,11 +35,11 @@
             <a id="contactView" href="#">Contact View <a class="slash">|</a></a>
             <a id="contactViewMySQL" href="messages.php">Contact View MySQL<a class="slash">|</a></a>
             <!-- <a id="login" href="#"> -->
-                <!-- <div class="loginDiv"> -->
-                    <!-- <div class="loginBtn">Login</div> -->
-                    <a id="login" href="#">Login(Firebase) <a class="slash">|</a></a>
-                    <a hidden href="#" id="signout">Sign Out</a>
-                <!-- </div> -->
+            <!-- <div class="loginDiv"> -->
+            <!-- <div class="loginBtn">Login</div> -->
+            <a id="login" href="#">Login(Firebase) <a class="slash">|</a></a>
+            <a hidden href="#" id="signout">Sign Out</a>
+            <!-- </div> -->
             <!-- </a> -->
             <a href="registration_json.html">Register(PHP) <a class="slash">|</a></a>
             <a id="login" href="login_json.html">Log-In(PHP)</a>
@@ -331,6 +331,7 @@
                         <input id="siEmail" type="email" name="email" placeholder="Email" />
                         <input id="siPassword" type="password" name="password" placeholder="Password" />
                         <input type="submit" id="siSubmit" value="Sign In" />
+
                         <div class="loginDiv">
                             <!-- <button class="loginBtn">Login</button> -->
 
@@ -339,28 +340,40 @@
                                 <a hidden href="#" id="signout-google">Sign Out</a>
                             </div>
                         </div>
+                        <div class="forgotPasswordDiv">
+                                <a href="#" id="fpw">Forgot Password</a>
+                            </div>
                     </form>
                 </div>
                 <div class="signUpBlock">
                     <p>don’t have an account?</p>
                     <h1>Sign Up!</h1>
                     <form>
-                        
+
                         <input id="sufName" type="text" name="firstname" placeholder="First name" />
-                        
+
                         <input id="sulName" type="text" name="lastname" placeholder="Last name" />
-                        
+
                         <input id="suEmail" type="email" name="email" placeholder="Email" />
-                        
+
                         <input id="suPassword" type="password" name="password" placeholder="Password" />
                         <input type="submit" id="suSubmit" value="Sign Up" />
                     </form>
                 </div>
-                
+
             </div>
             <div class="message_body">
                 <p>Thanks for your contact info.</p>
                 <p>We'll be back in touch if we feel like it.</p>
+            </div>
+            <div class="retrievePassword">
+                <p>Put in your email.</p>
+                <input id="rpEmail" type="email" name="email" placeholder="Email" />
+                <input type="submit" id="rpSubmit" value="Send Email" />
+            </div>
+            <div class="passwordConfirm">
+                <p>Check you email to reset your password.</p>
+                <a href="#" id="passwordRefresh">Go back to Home Page</a>
             </div>
         </section>
 
