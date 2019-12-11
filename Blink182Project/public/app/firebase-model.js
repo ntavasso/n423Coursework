@@ -1,63 +1,146 @@
 
 
+// function hideDiv(){
+//   $(".albums .wrapper").hide();
+//   // $(".test").hide();
+//   var path = location.href;
+//   var url = new URL(path);
+//   id = url.searchParams.get("id");
+//   // $('.albumWrap').hide();
+//   $('#album' + id).show();
+//   console.log(id);
+
+// }
+
+// function getAlbumId(idx) {
+//   window.location.href = "albumDetail.html?id=" + idx;
+// }
+// function getMemberId(idx) {
+//   window.location.href = "memberDetail.html?id=" + idx;
+
+// }
+
+
 var FIREBASE_MODEL = (function () {
 
-  //  // Initialize Cloud Firestore through Firebase
-// var config = {
-//   apiKey: 'AIzaSyDNGPfSuUJ7CBREfV7POCBpnosgfRhQrXg',
-//   authDomain: 'speakerlisthw.firebaseapp.com',
-//   projectId: 'speakerlisthw'
-// };
-
-// firebase.initializeApp(config);
 
 
-
-// var db = firebase.firestore();
+  // var db = firebase.firestore();
   // you need to input code here
   var _speakerArray = [];
+  var _albumArray = [];
   var _contactArray = [];
+  // var _userArray = firebase.firestore()
+  //   .collection('users');
 
   var _getData = function () {
     $.getJSON("data/data.json", function (data) {
-        //success one 
-        // console.log(result.speakers);
-        _speakerArray = data.speakers;
-        _contactArray = data.contacts;
+      //success one 
+      console.log(data.speakers);
+      _speakerArray = data.speakers;
+      _albumArray = data.albums;
+      _contactArray = data.contacts;
+      // _userArray = data.users;
 
-        $.each(_speakerArray, function (idx, listName) {
-            $(".content").append(
-                
-                        `<div class="flexWrapper"><div class="image"><img src="${listName.photo}"></div>
-                        <div class="bio"><p>  ${listName.name}</p><p class="bioClass">Bio: ${listName.description}</p></div></div>`
-                        // `<p>${listName.suffix}</p>`,
-                        // `<p>${listName.age}</p>`,
-                        // `<p>${listName.description}</p></div>`
-                
+      $.each(_speakerArray, function (idx, listName) {
+        $(".content").append(
 
-            )
-        });
+          `<div class="flexWrapper" id = "member_${idx}" onclick="javascript:getMemberId();" >
+            <div class="image"><img src="${listName.photo}"></div>
+            <div class="bio"><p>  ${listName.name}</p><p class="bioClass">Bio: ${listName.description}</p>
+            </div>
+          </div>
+                        
+          <div id="myModal_${idx}" class="modal">
+            <div class="modal-content">
+              <div class="container">
+                <span onclick="document.getElementById('myModal_${idx}').style.display='none'" class="close">&times;
+                </span>
+                <div class="modalFlexWrapper" id = "memberModalFlex_${idx}">
+                  <div class="image"><img src="${listName.photo}"></div>
+                  <div class="bio"><p><textarea id="memberName_${idx}">${listName.name}</textarea></p><p class="bioClass">Bio: <textarea id="memberBio_${idx}" style="width:100%;">${listName.description}</textarea></p>
+                  </div>
+                </div>
+              </div>
+              <button>Submit</button>
+
+            </div>
+          </div>
+            <button onclick="document.getElementById('myModal_${idx}').style.display='block'" class="button black">Open Modal</button>`
+
+
+        )
+console.log(`"myModal_${idx}"`);
+      });
+
+      $.each(_albumArray, function (idx, listName) {
+        $(".content2").append(
+
+          `<div class="flexWrapper" id = "album_${idx}" onclick="javascript:getAlbumId(${idx});"><div class="image"><img src="${listName.photo}"></div>
+                        <div class="bio"><p>  ${listName.name}</p><p class="bioClass">Bio: ${listName.description}</p></div></div>
+                        <div id="albumModal_${idx}" class="modal">
+            <div class="modal-content">
+              <div class="container">
+                <span onclick="document.getElementById('albumModal_${idx}').style.display='none'" class="close">&times;
+                </span>
+                <div class="modalFlexWrapper" id = "albumModalFlex_${idx}" ">
+                  <div class="image"><img src="${listName.photo}"></div>
+                  <div class="bio"><p><textarea id="albumName_${idx}">${listName.name}</textarea></p><p class="bioClass">Bio: <textarea id = "albumBio_${idx}" style="width:100%;">${listName.description}</textarea></p>
+                  </div>
+                </div>
+              </div>
+              <button>Submit</button>
+
+            </div>
+          </div>
+            <button onclick="document.getElementById('albumModal_${idx}').style.display='block'" class="button black">Open Modal</button>`
+          
+
+
+        )
+      });
+
+
 
     }).fail(function (err) {
-        console.log(err);
+      console.log(err);
     });
+
   };
 
-  var _getContactsArray = function () {
-    return _contactArray;
+
+
+  // var _getFavoritesArray = function () {
+  //   return _favoriteArray;
+  // }
+
+  var _getAlbumsArray = function () {
+    return _albumArray;
   }
 
-  var _getSpeakersArray = function(){
+  var _getSpeakersArray = function () {
     return _speakerArray;
-}
+  }
+  var _editMemberBio = function () {
+    
+    // _userArray.doc("frank").update({
+    //   "favorites.firebase": "Help")}
+    //   });
+  }
 
 
-  var _setContact = function(contact){
+  var _setContact = function (contact) {
     _contactArray.push(contact);
     console.log(_contactArray);
-    
 
-}
+
+  }
+  // var _setUser = function (user) {
+  //   _userArray.push(user);
+  //   console.log(_userArray);
+
+
+  // }
 
   function authStateObserver(user) {
     console.log(user);
@@ -89,7 +172,7 @@ var FIREBASE_MODEL = (function () {
     firebase.auth().onAuthStateChanged(authStateObserver);
   }
 
-  var _createContact = function(fName, lName, email, comment) {
+  var _createFavorite = function (fName, lName, email, comment) {
     //  firebase
     //   .auth()
     //   .createUserWithEmailAndPassword(email, pw)
@@ -99,24 +182,24 @@ var FIREBASE_MODEL = (function () {
     //     var errorMessage = error.message;
     //     console.log(errorCode + ' ' + errorMessage);
     //   })
-      // .then(function(res) {
-      //   return 
-        firebase
-          .firestore()
-          .collection('contacts')
-          .add({
-            displayName: fName + ' ' + lName,
-            email: email,
-            timestamp: firebase.firestore.FieldValue.serverTimestamp(),
-            comment: comment
-          })
-          .catch(function(error) {
-            console.error(
-              'Error writing new message to Firebase Database',
-              error
-            );
-          });
-      // });
+    // .then(function(res) {
+    //   return 
+    firebase
+      .firestore()
+      .collection('contacts')
+      .add({
+        displayName: fName + ' ' + lName,
+        email: email,
+        timestamp: firebase.firestore.FieldValue.serverTimestamp(),
+        comment: comment
+      })
+      .catch(function (error) {
+        console.error(
+          'Error writing new message to Firebase Database',
+          error
+        );
+      });
+    // });
   };
 
   var _signinWithGoogle = function () {
@@ -124,7 +207,7 @@ var FIREBASE_MODEL = (function () {
     firebase.auth().signInWithPopup(provider);
   };
 
-  var _createAccount = function (email, pw, fName, lName) {
+  var _createAccount = function (email, pw, fName, lName, role) {
     firebase
       .auth()
       .createUserWithEmailAndPassword(email, pw)
@@ -141,6 +224,7 @@ var FIREBASE_MODEL = (function () {
           .add({
             displayName: fName + ' ' + lName,
             email: email,
+            role: role,
             Timestamp: firebase.firestore.FieldValue.serverTimestamp(),
           })
           .catch(function (error) {
@@ -150,7 +234,7 @@ var FIREBASE_MODEL = (function () {
             )
           })
       });
-    // console.log(email);
+    console.log(email);
   }
 
   var _signInWithEP = function (email, pw) {
@@ -172,6 +256,7 @@ var FIREBASE_MODEL = (function () {
     firebase.auth().signOut();
   };
 
+
   var _sendResetPassword = function (emailAddress) {
     let auth = firebase.auth();
     auth.sendPasswordResetEmail(emailAddress)
@@ -189,13 +274,17 @@ var FIREBASE_MODEL = (function () {
     //   return functions here
     getData: _getData,
     getSpeakersArray: _getSpeakersArray,
-    getContactsArray: _getContactsArray,
+    // getContactsArray: _getContactsArray,
+    // editMemberBio: _editMemberBio,
+    getAlbumsArray: _getAlbumsArray,
     setContact: _setContact,
-    createContact: _createContact,signinWithGoogle: _signinWithGoogle,
+    // createContact: _createContact, 
+    signinWithGoogle: _signinWithGoogle,
     signOut: _signOut,
     createAccount: _createAccount,
     signInWithEP: _signInWithEP,
-    sendResetPassword:_sendResetPassword 
+    sendResetPassword: _sendResetPassword
+    // setUser: _setUser
 
   };
 })();

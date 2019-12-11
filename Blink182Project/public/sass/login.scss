@@ -1,17 +1,26 @@
 .login {
-  // background-color: $loginBackgroundColor;
-
+  background-image: url("../images/blinkBackground.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   .forms {
-    display: flex;
-    justify-content: space-around;
-    //background-color: red;
+    // display: flex;
+    // justify-content: space-around;
+    // background-color: blue;
     width: 80%;
     margin: auto;
+    height: 100%;
+    padding-top: 200px;
 
     .loginBlock {
-      //background-color: red;
-      margin-top: 150px;
-      width: 207px;
+      background-color: white;
+      // padding-top: 150px;
+      border-radius: 10px;
+      margin-left: 150px;
+      width: 70%;
+      height: 300px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.49);
 
       h1 {
         font-size: 32px;
@@ -19,107 +28,134 @@
         letter-spacing: 2px;
         //font-weight: bolder;
         width: 230px;
+        padding-left: 10px;
+        padding-top: 20px;
       }
       form {
+        // background-color: red;
+        width: 80%;
+        margin-left: 30px;
+        margin-top: -10px;
         p {
           color: black;
           font-size: 14px;
           font-family: "Gill Sans MT";
           letter-spacing: 1.5px;
         }
+
+        #siEmail {
+          margin-top: 32px;
+        }
+
+        #siPassword {
+          margin-top: 32px;
+        }
         input {
-          margin-top: 62px;
+          // margin-top: 32px;
           //   background-color: $loginBackgroundColor;
-          border: none;
-          border-bottom: 3px solid black;
-          width: 207px;
+          // border: none;
+          border: 1px solid black;
+          border-radius: 5px;
+          width: 100%;
+          height: 30px;
         }
         ::placeholder {
-          color: black;
+          color: gray;
           font-size: 14px;
           font-family: "Gill Sans MT";
           letter-spacing: 1.5px;
         }
 
         #siSubmit {
-          margin-top: 56px;
-          background-color: #ffd972;
+          // margin-top: 56px;
+          background-color: black;
+          color: white;
           border: none;
-          width: 207px;
-          height: 52px;
-          border-radius: 20px;
+          width: 160px;
+          height: 32px;
+          border-radius: 5px;
           font-family: "Montserrat", sans-serif;
-          font-size: 25px;
+          font-size: 20px;
+          font-weight: lighter;
           letter-spacing: 2px;
           box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
           &:hover {
-            background-color: rgba(67, 154, 134, 0.7);
+            background-color: gray;
           }
         }
         .forgotPasswordDiv {
           margin-top: 30px;
-          display: flex;
-          justify-content: center;
+          // display: flex;
+          // justify-content: center;
 
           #fpw {
             padding-top: 5px;
             padding-left: 6px;
-            background-color: #ffd972;
+            // background-color: #ffd972;
             border: none;
             width: 207px;
             height: 35px;
-            border-radius: 20px;
+            // border-radius: 20px;
             font-family: "Montserrat", sans-serif;
             font-size: 18px;
             letter-spacing: 2px;
-            box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            // box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
             text-decoration: none;
-            color: black;
+            color: gray;
             &:hover {
-              background-color: rgba(67, 154, 134, 0.7);
-
+              text-decoration: underline;
             }
           }
         }
-        .loginDiv {
-          .loginBtn {
-            margin-top: 56px;
-            background-color: #ffd972;
-            border: none;
-            width: 207px;
-            height: 52px;
-            border-radius: 20px;
-            font-family: "Montserrat", sans-serif;
-            font-size: 25px;
-            letter-spacing: 2px;
-            box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
-            &:hover {
-              background-color: rgba(67, 154, 134, 0.7);
-            }
-          }
-          .googleDiv {
-            text-align: center;
-            margin-top: 36px;
-            background-color: #ffd972;
-            border: none;
-            width: 207px;
-            height: 62px;
-            border-radius: 20px;
-            font-family: "Montserrat", sans-serif;
-            font-size: 25px;
-            letter-spacing: 2px;
-            box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-            &:hover {
-              background-color: rgba(67, 154, 134, 0.7);
-            }
-            a {
-              text-decoration: none;
+        .wrap {
+          padding-top: 20px;
+          display: flex;
+          justify-content: space-between;
+          width: 60%;
+          .loginDiv {
+            .loginBtn {
+              // margin-top: 56px;
+              background-color: black;
+              color: white;
+              border: none;
+              width: 160px;
+              height: 32px;
+              border-radius: 5px;
               font-family: "Montserrat", sans-serif;
               font-size: 20px;
+              font-weight: lighter;
               letter-spacing: 2px;
-              color: black;
+              box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+              &:hover {
+                background-color: rgba(67, 154, 134, 0.7);
+              }
+            }
+            .googleDiv {
+              background-color: black;
+              color: white;
+              border: none;
+              width: 200px;
+              height: 32px;
+              border-radius: 5px;
+              font-family: "Montserrat", sans-serif;
+              font-size: 20px;
+              font-weight: lighter;
+              letter-spacing: 2px;
+              box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+              &:hover {
+                background-color: gray;
+              }
+              a {
+                padding-left: 8px;
+                text-decoration: none;
+                font-family: "Montserrat", sans-serif;
+                font-size: 14px;
+                letter-spacing: 2px;
+                color: white;
+              }
             }
           }
         }
@@ -127,14 +163,18 @@
     }
 
     .signUpBlock {
-      //background-color: blue;
-      margin-top: 115px;
-      width: 250px;
+      background-color: white;
+      border-radius: 10px;
+      margin-left: 150px;
+      margin-top: 100px;
+      width: 70%;
+      height: 600px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.49);
 
       p {
-        font-family: Gill Sans MT, Italics;
-        font-style: italic;
-        font-size: 12px;
+        color: black;
+        font-size: 14px;
+        font-family: "Gill Sans MT";
         letter-spacing: 1.5px;
       }
 
@@ -142,36 +182,80 @@
         font-size: 32px;
         font-family: "Montserrat", sans-serif;
         letter-spacing: 2px;
-        width: 207px;
+        //font-weight: bolder;
+        width: 230px;
+        padding-left: 10px;
+        padding-top: 20px;
       }
 
-      input {
-        margin-top: 62px;
-        //   background-color: $loginBackgroundColor;
-        border: none;
-        border-bottom: 3px solid black;
-        width: 250px;
-      }
-      ::placeholder {
-        color: black;
-        font-size: 14px;
-        font-family: "Gill Sans MT";
-        letter-spacing: 1.5px;
-      }
-      #suSubmit {
-        margin-top: 56px;
-        background-color: #ffd972;
-        border: none;
-        width: 250px;
-        height: 52px;
-        border-radius: 20px;
-        font-family: "Montserrat", sans-serif;
-        font-size: 25px;
-        letter-spacing: 2px;
-        box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      form {
+        width: 80%;
+        margin-left: 30px;
+        margin-top: -10px;
 
-        &:hover {
-          background-color: rgba(67, 154, 134, 0.7);
+        label {
+          padding-top: 20px;
+
+          h3 {
+            color: black;
+            font-size: 14px;
+            font-family: "Gill Sans MT";
+            letter-spacing: 1.5px;
+          }
+          h4{
+            font-family: "Gill Sans MT";
+            letter-spacing: 1.5px;
+          }
+        }
+        input {
+          border: 1px solid black;
+          border-radius: 5px;
+          width: 100%;
+          height: 30px;
+
+          // #role_0 {
+          //   background-color: red;
+          // }
+          // #role_1 {
+          // }
+        }
+        ::placeholder {
+          color: gray;
+          font-size: 14px;
+          font-family: "Gill Sans MT";
+          letter-spacing: 1.5px;
+        }
+        #sufName {
+          margin-top: 32px;
+        }
+
+        #sulName {
+          margin-top: 32px;
+        }
+        #suEmail {
+          margin-top: 32px;
+        }
+
+        #suPassword {
+          margin-top: 32px;
+        }
+        #suSubmit {
+          margin-top: 20px;
+          background-color: black;
+          color: white;
+          border: none;
+          width: 160px;
+          height: 32px;
+          border-radius: 5px;
+          font-family: "Montserrat", sans-serif;
+          font-size: 20px;
+          font-weight: lighter;
+          letter-spacing: 2px;
+          box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+          &:hover {
+            background-color: gray;
+          }
         }
       }
     }

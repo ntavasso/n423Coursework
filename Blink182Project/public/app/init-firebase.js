@@ -10,3 +10,13 @@ const firebaseConfig = {
 
   // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
+// database = firebase.database();
+// var ref = database.ref('users');
+// ref.on('value', gotData, errData);
+// function gotData(data) {
+// console.log(data.val());
+// }
+// function errData(err) {    
+// console.log('error');
+// console.log(err);
+// }

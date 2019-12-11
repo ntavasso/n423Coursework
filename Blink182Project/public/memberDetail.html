@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- <link rel="stylesheet" href="css/billboard.css"> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <h1>Member Details</h1>
+    <div class="member" id="member_0">
+        <div class="flexWrapper">
+            <div class="image"><img src="images/mark.png"></div>
+            <div class="bio" id="member_0_bio">
+                <p>Mark Hoppus</p>
+                <p class="bioClass">Bio: BLAH BLAH</p>
+            </div>
+        </div>
+    </div>
+    <div class="member" id="member_1">
+        <div class="flexWrapper">
+            <div class="image"><img src="images/tom.jpg"></div>
+            <div class="bio">
+                <p>Tom Delonge</p>
+                <p class="bioClass">Bio: BLAH BLAH</p>
+            </div>
+        </div>
+    </div>
+    <div class="member" id="member_2">
+        <div class="flexWrapper">
+            <div class="image"><img src="images/travis.jpg"></div>
+            <div class="bio">
+                <p>Travis Barker</p>
+                <p class="bioClass">Bio: BLAH BLAH</p>
+            </div>
+        </div>
+    </div>
+    <div class="member" id="member_3">
+        <div class="flexWrapper">
+            <div class="image"><img src="images/matt.jpg"></div>
+            <div class="bio">
+                <p>Matt Skiba</p>
+                <p class="bioClass">Bio: BLAH BLAH</p>
+            </div>
+        </div>
+    </div>
+    <div class="member" id="member_4">
+        <div class="flexWrapper">
+            <div class="image"><img src="images/scott.png"></div>
+            <div class="bio">
+                <p>Scott Raynor</p>
+                <p class="bioClass">Bio: BLAH BLAH</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- <button id="editButton">Edit</button> -->
+    
+</body>
+<!-- <script src="https://d3js.org/d3.v5.min.js"></script> -->
+
+<script src="https://www.gstatic.com/firebasejs/6.6.1/firebase.js"></script>
+<script src="/https:/www.gstatic.com/firebase/6.6.1/firebase-auth.js"></script>
+<script src="/https:/www.gstatic.com/firebase/6.6.1/firebase-firestore.js"></script>
+<script src="/https:/www.gstatic.com/firebase/6.6.1/firebase-database.js"></script>
+<script src="/https:/www.gstatic.com/firebase/6.6.1/firebase-messaging.js"></script>
+<script src="/https:/www.gstatic.com/firebase/6.6.1/firebase-storage.js"></script>
+<script src="/https:/www.gstatic.com/firebase/init.js"></script>
+<script src="app/init-firebase.js"></script>
+<script src="lib/jquery-3.4.1.min.js"></script>
+<script src="app/firebase-model.js"></script>
+<script src="app/app.js"></script>
+<!-- <script src="app/billboard.js"></script> -->
+<script src="app/memberDetail.js"></script>
+<script>
+// function divClicked(idx) {
+//     var divHtml = $(`#member_"${idx}"_bio`).html(); // notice "this" instead of a specific #myDiv
+//     var editableText = $("<textarea />");
+//     editableText.val(divHtml);
+//     $(`#member_"${idx}"_bio`).replaceWith(editableText);
+//     editableText.focus();
+//     editableText.blur(editableTextBlurred);
+// }
+
+function divClicked() {
+    var divHtml = $("#member_0_bio").html(); // notice "this" instead of a specific #myDiv
+    var editableText = $("<textarea />");
+    editableText.val(divHtml);
+    $("#member_0_bio").replaceWith(editableText);
+    editableText.focus();
+    editableText.blur(editableTextBlurred);
+}
+
+function editableTextBlurred() {
+    var html = $(this).val();
+    var viewableText = $("<div>");
+    viewableText.html(html);
+    $(this).replaceWith(viewableText);
+    // setup the click event for this new div
+    viewableText.click(divClicked);
+}
+
+$(document).ready(function() {
+    $("#member_0").click(divClicked);
+});
+</script>
+
+</html>
